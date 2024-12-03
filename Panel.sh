@@ -1,60 +1,74 @@
 #!/bin/bash
 
-# Function to display messages
-echo_message() {
-    echo -e "\033[1;32m$1\033[0m"
-}
+# Display the updated ASCII Art logo with author and updated date
+echo -e "\033[1;37m 
+   Do you want to install the panel? (yes/no)
 
-echo_message "Do you want to install the panel? (yes/no)
-   ______                      __                       __
-  / __/ /____ _____  ___  ____/ /_  ___  ___ ____  ___ / /
- _\ \/  '_/ // / _ \/ _ \/ __/ __/ / _ \/ _ \` _ \/ -_) / 
-/___/_/\_\\_, / .__/\___/_/  \__/ / .__/\_,_/_//_/\__/_/  
-         /___/_/                 /_/                      "
+ █████╗ ██╗██████╗ ██╗     ██╗███╗   ██╗██╗  ██╗
+██╔══██╗██║██╔══██╗██║     ██║████╗  ██║██║ ██╔╝
+███████║██║██████╔╝██║     ██║██╔██╗ ██║█████╔╝ 
+██╔══██║██║██╔══██╗██║     ██║██║╚██╗██║██╔═██╗ 
+██║  ██║██║██║  ██║███████╗██║██║ ╚████║██║  ██╗
+╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
+
+                      Author: WorldCraftLink
+                      Last Updated: 2024-12-02
+\033[0m"
 read answer
 
+# Check if the script is being run as root
 if [ "$answer" != "yes" ]; then
-    echo_message "Installation aborted."
+    echo -e "\033[1;31m> Installation aborted."
     exit 0
 fi
 
-echo_message "* Installing Dependencies"
+# Thanks to WorldCraftLink Labs 
+echo -e "\033[1;32m> A Huge thanks to the WorldCraftLink Labs team for creating the panel! We appreciate your hard work and dedication.
+\033[0m"
 
-# Update package list and install dependencies
-sudo apt update
-sudo apt install -y nodejs
-node -v
-clear
+sleep 5
+# Install necessary packages
+echo -e "\033[1;34m[INFO] Installing dependencies...\033[0m"
+sudo apt update -y && sudo apt upgrade -y
+sudo apt install -y nodejs git & sudo apt install -y git npm curl
+if [ $? -ne 0 ]; then
+    echo -e "\033[1;31m[ERROR]> Failed to install dependencies.\033[0m"
+    exit 1
+fi
 
-echo_message "* Installed Panel"
-
-# Create directory, clone repository, and install files
-git clone --branch v0.2.2 https://github.com/WorldCraftLink/Panel
-cd Panel/ || { echo_message "Failed to change directory to panel"; exit 1; }
-git branch
-git switch v0.2.2
-clear
-
-echo_message "* Installed Skyport"
-
-# Create directory, clone repository, and install files
-cd ..
-mv Panel WorldCraft
-cd WorldCraft/
+# Clone the repository and enter the directory
+echo -e "\033[1;34m[INFO] Cloning WorldCraftLink Panel repository...\033[0m"
+git clone https://github.com/WorldCraftLink/Panel || { echo -e "\033[1;31m[ERROR] Failed to install the panel this is delete the web.\033[0m"; exit 1; } 
+#cd Panel/ || { echo -e "\033[1;31m[ERROR] Failed to enter the panel directory.\033[0m"; exit 1; }
+#git clone --branch v?.?.? https://github.com/WorldCraftLink/Panel || { echo -e "\033[1;31m[ERROR] Failed to install the panel this is delete the web.\033[0m"; exit 1; } 
+#git branch 
+#git switch v?.?.? || { echo -e "\033[1;31m[ERROR] Failed to change the branch.\033[0m"; exit 1; } 
+#cd ..
+mv Panel WorldCraftP
+cd WorldCraftP/ || { echo -e "\033[1;31m[ERROR] Failed to enter the WorldCraftP directory.\033[0m"; exit 1; }
 npm install
+
+#Create the seed
+echo -e "\033[1;34m[INFO] Create The Seed...\033[0m"
+npm run seed || { echo -e "\033[1;31m[ERROR] Failed to find the seed.\033[0m"; exit 1; }
 clear
 
-echo_message "* Create The User"
+#Create the User
+echo -e "\033[1;34m[INFO] Create The User...\033[0m"
+npm run createUser || { echo -e "\033[1;31m[ERROR] Failed to create a user.\033[0m"; exit 1; }
+echo -e "\033[1;37m 
+   Do you want to install the panel? (yes/no)
 
-# Run setup scripts
-npm run seed
-npm run createUser
-clear
+ █████╗ ██╗██████╗ ██╗     ██╗███╗   ██╗██╗  ██╗
+██╔══██╗██║██╔══██╗██║     ██║████╗  ██║██║ ██╔╝
+███████║██║██████╔╝██║     ██║██╔██╗ ██║█████╔╝ 
+██╔══██║██║██╔══██╗██║     ██║██║╚██╗██║██╔═██╗ 
+██║  ██║██║██║  ██║███████╗██║██║ ╚████║██║  ██╗
+╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
 
-echo_message "* Skyport Installed and Started on Port 3001"
+                      Author: WorldCraftLink
+                      Last Updated: 2024-12-02
+\033[0m"
+node . || { echo -e "\033[1;31m[ERROR] Failed to start the panel.\033[0m"; exit 1; }
 
-echo_message "* Starting Skyport"
-
-# Start the Skyport
-node .
-
+echo -e "\033[1;32m[INFO] WorldCraftLink Panel setup complete!\033[0m"
