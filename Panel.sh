@@ -38,6 +38,7 @@ sleep 5
 echo -e "\033[1;34m[INFO] Installing dependencies...\033[0m"
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install -y nodejs git & sudo apt install -y git npm curl
+npm i keyv
 if [ $? -ne 0 ]; then
     echo -e "\033[1;31m[ERROR]> Failed to install dependencies.\033[0m"
     exit 1
