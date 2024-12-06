@@ -55,12 +55,12 @@ cd WorldCraftP/ || { echo -e "\033[1;31m[ERROR] Failed to enter the WorldCraftP 
 npm install
 
 #Create the seed
-echo -e "\033[1;34m[INFO] Create The Seed...\033[0m"
+echo -e "\033[1;34m[INFO] Create A Seed...\033[0m"
 npm run seed || { echo -e "\033[1;31m[ERROR] Failed to find the seed.\033[0m"; exit 1; }
 clear
 
 #Create the User
-echo -e "\033[1;34m[INFO] Create The User...\033[0m"
+echo -e "\033[1;34m[INFO] Create A User...\033[0m"
 npm run createUser || { echo -e "\033[1;31m[ERROR] Failed to create a user.\033[0m"; exit 1; }
 node . || { echo -e "\033[1;31m[ERROR] Failed to start the panel.\033[0m"; exit 1; }
 
