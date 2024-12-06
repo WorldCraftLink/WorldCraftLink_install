@@ -56,6 +56,6 @@ vi config.json #:q1
 npm install
 clear
 
-echo -e "\033[1;34m[INFO] Use this first { cd WorldCraftd/ }\033[0m"
+echo -e "\033[1;34m[INFO] Use this first cmd { cd WorldCraftd/ }\033[0m"
 echo -e "\033[1;34m[INFO] Get your Panel's access key from the WorldCraft panel's config.json file and set it as 'remoteKey'. Do the same for the other way, set your WorldCraftd access key and configure it on the Panel\033[0m"
 echo -e "\033[1;32m[INFO] You done use this cmd { node . }\033[0m"
