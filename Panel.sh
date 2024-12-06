@@ -19,7 +19,7 @@ echo -e "\033[1;37m
                         ╚══════╚═╚═╝  ╚═══╚═╝  ╚═╝                             
                                                                            
                       Author: WorldCraftLink
-                      Last Updated: 2024-12-02
+                      Last Updated: 2024-12-10
 \033[0m"
 read answer
 
@@ -46,8 +46,7 @@ fi
 # Clone the repository and enter the directory
 echo -e "\033[1;34m[INFO] Cloning WorldCraftLink Panel repository...\033[0m"
 git clone https://github.com/WorldCraftLink/Panel || { echo -e "\033[1;31m[ERROR] Failed to install the panel this is delete the web.\033[0m"; exit 1; } 
-#cd Panel/ || { echo -e "\033[1;31m[ERROR] Failed to enter the panel directory.\033[0m"; exit 1; }
-#git clone --branch v?.?.? https://github.com/WorldCraftLink/Panel || { echo -e "\033[1;31m[ERROR] Failed to install the panel this is delete the web.\033[0m"; exit 1; } 
+#cd Panel || { echo -e "\033[1;31m[ERROR] Failed to enter the WorldCraftP directory.\033[0m"; exit 1; }
 #git branch 
 #git switch v?.?.? || { echo -e "\033[1;31m[ERROR] Failed to change the branch.\033[0m"; exit 1; } 
 #cd ..
