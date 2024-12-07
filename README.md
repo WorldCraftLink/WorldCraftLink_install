@@ -4,5 +4,5 @@ bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink-I
 ```
 # 🔹 WorldCraftLink ( Daemon ) Installer
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink-Installer/refs/heads/main/Daemon.sh))
+bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink-Installer/refs/heads/main/Daemon.sh)
 ```
