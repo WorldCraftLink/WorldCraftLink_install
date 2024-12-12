@@ -46,10 +46,6 @@ fi
 # Clone the repository and enter the directory
 echo -e "\033[1;34m[INFO] Cloning WorldCraftLink Daemon repository...\033[0m"
 git clone https://github.com/WorldCraftLink/Daemon || { echo -e "\033[1;31m[ERROR] Failed to install the panel this is delete the web.\033[0m"; exit 1; } 
-#cd Daemon || { echo -e "\033[1;31m[ERROR] Failed to enter the WorldCraftd directory.\033[0m"; exit 1; }
-#git branch 
-#git switch v?.?.? || { echo -e "\033[1;31m[ERROR] Failed to change the branch.\033[0m"; exit 1; } 
-#cd ..
 mv Daemon WorldCraftd
 cd WorldCraftd/ || { echo -e "\033[1;31m[ERROR] Failed to enter the WorldCraftd directory.\033[0m"; exit 1; }
 vi config.json #:q1
