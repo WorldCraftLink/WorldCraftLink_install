@@ -46,12 +46,12 @@ fi
 # Clone the repository and enter the directory
 echo -e "\033[1;34m[INFO] Cloning WorldCraftLink Daemon repository...\033[0m"
 git clone https://github.com/WorldCraftLink/Daemon || { echo -e "\033[1;31m[ERROR] Failed to install the panel this is delete the web.\033[0m"; exit 1; } 
-mv Daemon WorldCraftd
-cd WorldCraftd/ || { echo -e "\033[1;31m[ERROR] Failed to enter the WorldCraftd directory.\033[0m"; exit 1; }
+mv Daemon worldcraftdaemon
+cd worldcraftdaemon/ || { echo -e "\033[1;31m[ERROR] Failed to enter the worldcraftdaemon directory.\033[0m"; exit 1; }
 vi config.json #:q1
 npm install
 clear
 
-echo -e "\033[1;34m[INFO] Use this first cmd { cd WorldCraftd/ }\033[0m"
+echo -e "\033[1;34m[INFO] Use this first cmd { cd worldcraftdaemon/ }\033[0m"
 echo -e "\033[1;34m[INFO] Get your Panel's access key from the WorldCraft panel's config.json file and set it as 'remoteKey'. Do the same for the other way, set your WorldCraftd access key and configure it on the Panel\033[0m"
 echo -e "\033[1;32m[INFO] You done use this cmd { node . }\033[0m"
