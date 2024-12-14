@@ -45,9 +45,9 @@ fi
 
 # Clone the repository and enter the directory
 echo -e "\033[1;34m[INFO] Cloning WorldCraftLink Panel repository...\033[0m"
-git clone https://github.com/WorldCraftLink/panel || { echo -e "\033[1;31m[ERROR] Failed to install the panel this is delete the web.\033[0m"; exit 1; } 
-mv panel worldcraftpanel
-cd worldcraftpanel/ || { echo -e "\033[1;31m[ERROR] Failed to enter the worldcraftpanel directory.\033[0m"; exit 1; }
+git clone https://github.com/srydenoss/skyport #git clone https://github.com/WorldCraftLink/panel || { echo -e "\033[1;31m[ERROR] Failed to install the panel this is delete the web.\033[0m"; exit 1; } 
+#mv panel worldcraftpanel
+cd skyport/ || { echo -e "\033[1;31m[ERROR] Failed to enter the worldcraftpanel directory.\033[0m"; exit 1; }
 npm install
 
 #Create the seed

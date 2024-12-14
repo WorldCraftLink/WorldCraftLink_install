@@ -45,9 +45,9 @@ fi
 
 # Clone the repository and enter the directory
 echo -e "\033[1;34m[INFO] Cloning WorldCraftLink Daemon repository...\033[0m"
-git clone https://github.com/WorldCraftLink/Daemon || { echo -e "\033[1;31m[ERROR] Failed to install the panel this is delete the web.\033[0m"; exit 1; } 
-mv Daemon worldcraftdaemon
-cd worldcraftdaemon/ || { echo -e "\033[1;31m[ERROR] Failed to enter the worldcraftdaemon directory.\033[0m"; exit 1; }
+git clone https://github.com/srydenoss/skyportd #git clone https://github.com/WorldCraftLink/Daemon || { echo -e "\033[1;31m[ERROR] Failed to install the panel this is delete the web.\033[0m"; exit 1; } 
+#mv Daemon worldcraftdaemon
+cd skyportd/ || { echo -e "\033[1;31m[ERROR] Failed to enter the worldcraftdaemon directory.\033[0m"; exit 1; }
 vi config.json #:q1
 npm install
 clear
