@@ -36,7 +36,7 @@ echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}This create a free host server, minecraf
     echo -e "▶ 2 ${BOLD}${WHITE}| Install Hydra Panel${NC}"
     echo -e "▶ 3${BOLD}${WHITE} | BACK${NC}"
     read option_hostserver
-        if [ $option_hostserver -eq 1 ]; 
+        if [ $option_hostserver -eq 1 ]; then
             clear
             echo -e "${WHITE}
 
@@ -55,7 +55,7 @@ echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}This create a free host server, minecraf
                                                                            
                       Author: WorldCraftLink
                       Last Updated: 2024-12-10"
-            bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/AllPanel/PufferPanel.sh)
+             bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/AllPanel/PufferPanel.sh)
         elif [ $option_hostserver -eq 2 ]; then
                 clear
                 echo -e "${WHITE}
@@ -75,9 +75,9 @@ echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}This create a free host server, minecraf
                                                                            
                       Author: WorldCraftLink
                       Last Updated: 2024-12-10"
-                bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/AllPanel/HydraPanel.sh)
+                 bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/AllPanel/HydraPanel.sh)
         elif [ $option_hostserver -eq 3 ]; then
-                bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/Script.sh)
+                 bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/Script.sh)
                else
           echo -e "${BOLD}${RED}[ERROR] ${DISABLE}Invalid option selected.${NC}"
    fi
