@@ -43,7 +43,7 @@ fi
 
 # Clone the repository and enter the directory
 echo -e "${BLUE}[INFO] Cloning FreeVPS repository...${NC}"
-wget https://raw.githubusercontent.com/itsgamer2o24/Server/refs/heads/main/FreeVPS/Freevps_install.sh && pwd
+wget https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/FreeVPS/Freevps_install.sh && pwd
 sleep 20
 nano Freevps_install.sh
 sleep 10

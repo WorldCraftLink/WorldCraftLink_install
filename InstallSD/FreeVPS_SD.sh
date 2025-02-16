@@ -55,7 +55,7 @@ echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}This create a free vps${NC}"
                                                                            
                       Author: WorldCraftLink
                       Last Updated: 2024-12-10"
-            bash <(curl https://raw.githubusercontent.com/itsgamer2o24/Server/refs/heads/main/FreeVPS/Freevps.sh)
+            bash <(curl https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/FreeVPS/Freevps.sh)
         elif [ $option_freevps -eq 2 ]; then
             clear
             echo -e "${WHITE}
@@ -75,7 +75,7 @@ echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}This create a free vps${NC}"
                                                                            
                       Author: WorldCraftLink
                       Last Updated: 2024-12-10"
-            bash <(curl -s https://raw.githubusercontent.com/itsgamer2o24/Server/refs/heads/main/script.sh)
+            bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/Script.sh)
 else
   echo -e "${BOLD}${RED}[ERROR] ${DISABLE}Invalid option selected.${NC}" #FreeVPS
 fi
