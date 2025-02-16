@@ -30,7 +30,6 @@ echo -e "${WHITE}
                       Author: WorldCraftLink
                       Last Updated: 2024-12-10"
 echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}This create a free host server, minecraftb server or etc${NC}"
-    sleep 5
     echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}Select an option:${NC}"
     echo -e "▶ 1 ${BOLD}${WHITE}| Install Puffer Panel${NC}"
     echo -e "▶ 2 ${BOLD}${WHITE}| Install Hydra Panel${NC}"
