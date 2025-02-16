@@ -56,7 +56,7 @@ echo -e "${WHITE}
                 clear
                 echo -e "${GREEN}RDP Created And Started on Port $selectedPort"
             elif [ $option_PFP -eq 2 ]; then
-              bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/Script.sh)
+              bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/InstallSD/HostServer_SD.sh)
           else
    echo -e "${BOLD}${RED}[ERROR] ${DISABLE}Invalid option selected.${NC}"
 fi

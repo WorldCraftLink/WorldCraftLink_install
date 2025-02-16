@@ -34,7 +34,7 @@ read option
 
 if [ $option -eq 1 ]; then
     sleep 1
-    bash <(curl https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/InstallSD/FreeVPS_SD.sh)
+    bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/InstallSD/FreeVPS_SD.sh)
       else
    echo -e "${BOLD}${RED}[ERROR] ${DISABLE}Invalid option selected.${NC}"
 fi
