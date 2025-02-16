@@ -37,7 +37,7 @@ if [ $option -eq 1 ]; then
     bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/InstallSD/FreeVPS_SD.sh)
 elif [ $option -eq 2 ]; then
     sleep 1
-      bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/InstallSD/HostServer_SD.sh)
+    bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/InstallSD/HostServer_SD.sh)
       else
    echo -e "${BOLD}${RED}[ERROR] ${DISABLE}Invalid option selected.${NC}"
 fi
