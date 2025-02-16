@@ -36,7 +36,7 @@ echo -e "${WHITE}
         read option_PFP
            if [ $option_PFP -eq 1 ]; then
                leep 5
-               echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}Downloading... Please Wait"
+               echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}Downloading... Please Wait${NC}"
                 sleep 2
                 apt update && apt upgrade -y
                 export SUDO_FORCE_REMOVE=yes
@@ -46,14 +46,14 @@ echo -e "${WHITE}
                 echo "lxsession -s LXDE -e LXDE" >> /etc/xrdp/startwm.sh
                 elif [ $option_PFP -eq 2]; then
                 clear
-                echo -e "${GREEN}Downloading and installation completed!"
-                echo -e "${YELLOW}Select RDP Port"
+                echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}Downloading and installation completed!{NC}"
+                echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}Select RDP Port"
                 read selectedPort
                 sed -i "s/port=3389/port=$selectedPort/g" /etc/xrdp/xrdp.ini
                 clear
                 service xrdp restart
                 clear
-                echo -e "${GREEN}RDP Created And Started on Port $selectedPort"
+                echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}RDP Created And Started on Port $selectedPort${NC}"
             elif [ $option_PFP -eq 2 ]; then
               bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/InstallSD/HostServer_SD.sh)
           else
