@@ -35,7 +35,7 @@ echo -e "${WHITE}
       echo -e "▶ 2 ${BOLD}${WHITE}| BACK"
         read option_PFP
            if [ $option_PFP -eq 1 ]; then
-               leep 5
+               sleep 5
                echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}Downloading... Please Wait${NC}"
                 sleep 2
                 apt update && apt upgrade -y
