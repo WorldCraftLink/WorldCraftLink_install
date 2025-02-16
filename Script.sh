@@ -33,8 +33,7 @@ echo -e "▶ 2${BOLD}${WHITE} | Host Server${NC}"
 read option
 
 if [ $option -eq 1 ]; then
-    echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}This create a free vps${NC}"
-    sleep 2
+    sleep 1
     bash <(curl https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/InstallSD/FreeVPS_SD.sh)
       else
    echo -e "${BOLD}${RED}[ERROR] ${DISABLE}Invalid option selected.${NC}"
