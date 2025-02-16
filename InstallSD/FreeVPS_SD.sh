@@ -57,25 +57,7 @@ echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}This create a free vps${NC}"
                       Last Updated: 2024-12-10"
             bash <(curl https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/FreeVPS/Freevps.sh)
         elif [ $option_freevps -eq 2 ]; then
-            clear
-            echo -e "${WHITE}
-
-██╗    ██╗██████╗██████╗██╗    ██████╗ ████████████╗ █████╗███████████████╗
-██║    ████╔═══████╔══████║    ██╔══████╔════██╔══████╔══████╔════╚══██╔══╝
-██║ █╗ ████║   ████████╔██║    ██║  ████║    ██████╔████████████╗    ██║   
-██║███╗████║   ████╔══████║    ██║  ████║    ██╔══████╔══████╔══╝    ██║   
-╚███╔███╔╚██████╔██║  ███████████████╔╚████████║  ████║  ████║       ██║   
- ╚══╝╚══╝ ╚═════╝╚═╝  ╚═╚══════╚═════╝ ╚═════╚═╝  ╚═╚═╝  ╚═╚═╝       ╚═╝   
-                        ██╗    █████╗   ████╗  ██╗                             
-                        ██║    ██████╗  ████║ ██╔╝                             
-                        ██║    ████╔██╗ ███████╔╝                              
-                        ██║    ████║╚██╗████╔═██╗                              
-                        ███████████║ ╚██████║  ██╗                             
-                        ╚══════╚═╚═╝  ╚═══╚═╝  ╚═╝                             
-                                                                           
-                      Author: WorldCraftLink
-                      Last Updated: 2024-12-10"
-            bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/Script.sh)
+        bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/Script.sh)
 else
   echo -e "${BOLD}${RED}[ERROR] ${DISABLE}Invalid option selected.${NC}" #FreeVPS
 fi
