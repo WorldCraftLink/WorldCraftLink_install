@@ -1,10 +1,16 @@
 #!/bin/bash
 clear
-#Coler
-BLUE="\033[1;34m" #ONLY INTO
-RED="\033[0;91m" #ONLY ERROR
-WHITE="\033[37m"
+
+# Custom 
 NC="\033[0m"
+BOLD="\033[01m"
+DISABLE="\033[02m"
+
+#Coler
+BLUE="\033[1;34m" #ONLY INFO
+RED="\033[0;91m" #ONLY 
+DARKGREY="\033[90m"
+WHITE="\033[37m"
 
 echo -e "${WHITE}
 
@@ -26,11 +32,11 @@ echo -e "${WHITE}
 ${NC}"
 
 # Thanks to WorldCraftLink Labs 
-echo -e "${BLUE}[INFO] A Huge thanks to the WorldCraftLink Labs team for creating the panel! We appreciate your hard work and dedication.${NC}"
+echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}A Huge thanks to the WorldCraftLink team for creating the FreeVPS! We appreciate your hard work and dedication.${NC}"
 sleep 2
 
 # Install necessary packages
-echo -e "${BLUR}[INFO] Installing dependencies...${NC}"
+echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}Installing dependencies...${NC}"
 rm -rf * & ls -a & cat /etc/os-release
 apt install nano
 apt install wget
@@ -42,14 +48,14 @@ if [ $? -ne 0 ]; then
 fi
 
 # Clone the repository and enter the directory
-echo -e "${BLUE}[INFO] Cloning FreeVPS repository...${NC}"
+echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}Cloning FreeVPS repository...${NC}"
 wget https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/FreeVPS/Freevps_install.sh && pwd
-sleep 20
-nano Freevps_install.sh
 sleep 10
+nano Freevps_install.sh
 chmod +x Freevps_install.sh
 
-echo -e "${BLUE}[INFO] Copy this cmd and wait the install done and paste the cmd
+echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}Copy this cmd and wait to install is done and paste the cmd and pick [1]${NC}"
+echo -e "${DARKGREY}————————————————————————————————${NC}
 su
 apt update
 echo $LD_AUDIT
@@ -57,6 +63,6 @@ unset LD_AUDIT
 apt update
 apt install neofetch
 apt install wget nano curl -y
-${NC}"
+${DARKGREY}————————————————————————————————"
 sleep 20
 ./Freevps_install.sh
