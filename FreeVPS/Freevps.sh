@@ -56,13 +56,11 @@ chmod +x Freevps_install.sh
 
 echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}Copy this cmd and wait to install is done and paste the cmd and pick [1]${NC}"
 echo -e "${DARKGREY}————————————————————————————————${NC}
-su
+su && apt update && echo $LD_AUDIT && unset LD_AUDIT'
+echo -e "${DARKGREY}And open your note and Copy this cmd you done paste this and you do next is paste this cmd${NC}
 apt update
-echo $LD_AUDIT
-unset LD_AUDIT
-apt update
-apt install neofetch
+apt install neofetch 
 apt install wget nano curl -y
-${DARKGREY}————————————————————————————————"
+${DARKGREY}————————————————————————————————${NC}"
 sleep 20
 ./Freevps_install.sh
