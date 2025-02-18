@@ -33,9 +33,9 @@ echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}This create a free vps${NC}"
     echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}Select an option:${NC}"
     echo -e "▶ 1 ${BOLD}${WHITE}| YES"
     echo -e "▶ 2 ${BOLD}${WHITE}| BACK"
-    read option_freevps
+    read option_playit
             
-        if [ $option_freevps -eq 1 ]; then
+        if [ $option_playit -eq 1 ]; then
             clear
             echo -e "${WHITE}
 
@@ -58,7 +58,7 @@ echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}This create a free vps${NC}"
         chmod +x playit-linux-amd64
         ./playit-linux-amd64
         echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}click the link"
-        elif [ $option_freevps -eq 2 ]; then
+        elif [ $option_playit -eq 2 ]; then
         bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/CustomDomain_SD.sh)
 else
   echo -e "${BOLD}${RED}[ERROR] ${DISABLE}Invalid option selected.${NC}" #FreeVPS
