@@ -57,7 +57,7 @@ echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}This create a free vps${NC}"
         wget https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-amd64
         chmod +x playit-linux-amd64
         ./playit-linux-amd64
-        echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}click the link"
+        echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}click the link${NC}"
         elif [ $option_playit -eq 2 ]; then
         bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/CustomDomain_SD.sh)
     else
