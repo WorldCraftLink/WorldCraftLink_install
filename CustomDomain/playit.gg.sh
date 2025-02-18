@@ -59,7 +59,7 @@ echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}This create a free vps${NC}"
         ./playit-linux-amd64
         echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}click the link"
         elif [ $option_freevps -eq 2 ]; then
-        #bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/CustomDomain_SD.sh)
+        bash <(curl -s https://raw.githubusercontent.com/WorldCraftLink/WorldCraftLink_install/refs/heads/main/CustomDomain_SD.sh)
 else
   echo -e "${BOLD}${RED}[ERROR] ${DISABLE}Invalid option selected.${NC}" #FreeVPS
 fi
