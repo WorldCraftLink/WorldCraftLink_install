@@ -53,7 +53,7 @@ echo -e "${BOLD}${BLUE}[INFO] ${DISABLE}This create a free vps${NC}"
                         ╚══════╚═╚═╝  ╚═══╚═╝  ╚═╝                             
                                                                            
                       Author: WorldCraftLink
-                      Last Updated: 2024-12-10"
+                      Last Updated: 2024-12-10${NC}"
         wget https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-amd64
         chmod +x playit-linux-amd64
         ./playit-linux-amd64
